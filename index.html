@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Redesign Lab | Website Redesign: Before and After</title>
+<meta name="description" content="Demo: an outdated layout redesigned with better typography, spacing, colours and a mobile-first approach.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="aurora"><i></i><i></i><i></i></div><div class="grid-fx"></div><div class="spot"></div><div class="bar"></div>
+<header class="nav">
+  <a class="logo" href="#home"><b></b>Redesign Lab</a>
+  <ul class="links"><li><a href="#compare">Compare</a></li><li><a href="#changes">What changed</a></li><li><a href="#type">Typography</a></li></ul>
+  <a class="btn btn-p" href="#compare">Try the slider</a>
+  <button class="burger" aria-label="Menu" aria-expanded="false">☰</button>
+</header>
+<main>
+<section id="home" class="intro">
+  <div class="wrap center">
+    <span class="eyebrow">Case study · Greenleaf Bakery</span>
+    <h1>From <span class="old-word">cluttered</span> to <span class="grad-text">crafted</span>.</h1>
+    <p class="lead">An outdated website rebuilt with cleaner typography, generous spacing, a modern colour palette and a mobile-first layout.</p>
+  </div>
+</section>
+
+<section id="compare">
+  <div class="wrap">
+    <div class="modes" role="tablist">
+      <button class="mode on" data-m="slide">↔ Slider</button><button class="mode" data-m="before">Before</button><button class="mode" data-m="after">After</button>
+      <label class="dev"><input type="checkbox" id="mobile"> Mobile width</label>
+    </div>
+    <div class="stage" id="stage">
+      <div class="frame" id="frame">
+        <!-- AFTER (new design) -->
+        <div class="site new" id="after">
+          <nav><b>🌿 Greenleaf</b><span>Menu</span><span>Story</span><span>Visit</span><i>Order now</i></nav>
+          <div class="nh"><div><small>Artisan bakery</small><h2>Baked fresh, <em>every morning.</em></h2><p>Sourdough, pastries and coffee made with organic flour from local farms.</p><div class="nb"><i>Order online</i><i class="g">See the menu</i></div></div><div class="nimg">🥐</div></div>
+          <div class="nc"><div><b>🍞</b>Sourdough<small>$6</small></div><div><b>🥐</b>Croissant<small>$4</small></div><div><b>🧁</b>Cupcake<small>$3</small></div></div>
+        </div>
+        <!-- BEFORE (old design) -->
+        <div class="site old" id="before">
+          <div class="mq">*** WELCOME TO GREENLEAF BAKERY *** BEST BREAD IN TOWN *** CALL NOW ***</div>
+          <table class="ot"><tr><td>Home</td><td>About Us</td><td>Products</td><td>Contact</td><td>Links</td></tr></table>
+          <h2>Greenleaf Bakery</h2>
+          <p>Welcome to our website!!! We are a bakery and we sell bread and cakes and many other things you will like. Please look around and buy something. We are open every day.</p>
+          <div class="ob"><span>CLICK HERE</span></div>
+          <p class="ol">Bread - Cakes - Cookies - Pies - Rolls - Buns - Coffee - Tea - More...</p>
+          <small>Visitors: 000342 · Best viewed in Internet Explorer</small>
+        </div>
+      </div>
+      <div class="knob" id="knob" role="slider" tabindex="0" aria-label="Before and after" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"><span>◂ ▸</span></div>
+      <span class="lab l1">Before</span><span class="lab l2">After</span>
+    </div>
+    <p class="hint">Drag the handle, or use the arrow keys, to compare the old and new design.</p>
+  </div>
+</section>
+
+<section id="changes">
+  <div class="wrap">
+    <div class="head" data-r><span class="eyebrow">What changed</span><h2>Five upgrades that made the difference</h2></div>
+    <div class="g3">
+      <div class="card" data-r><div class="ico">🔤</div><h3>Typography</h3><p>Two fonts, clear sizes and comfortable line-height replace mixed system fonts.</p></div>
+      <div class="card" data-r style="--d:.08s"><div class="ico">🎨</div><h3>Colour system</h3><p>A calm green and warm cream palette with strong contrast for text.</p></div>
+      <div class="card" data-r style="--d:.16s"><div class="ico">📐</div><h3>Spacing and grid</h3><p>A consistent 8px scale gives every section room to breathe.</p></div>
+      <div class="card" data-r><div class="ico">📱</div><h3>Mobile first</h3><p>Layout designed for phones first, then enhanced for larger screens.</p></div>
+      <div class="card" data-r style="--d:.08s"><div class="ico">⚡</div><h3>Performance</h3><p>No heavy images or marquee scripts. Pages load in under a second.</p></div>
+      <div class="card" data-r style="--d:.16s"><div class="ico">🎯</div><h3>Clear actions</h3><p>One primary button replaces a wall of competing links.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="type">
+  <div class="wrap split">
+    <div data-r><span class="eyebrow">Typography</span><h2>Readable, rhythmic, consistent</h2><p class="lead" style="margin-top:16px">Move the sliders to see how size and line-height change reading comfort.</p>
+      <div class="ctl"><label>Font size <b id="fsv">18px</b><input type="range" id="fs" min="13" max="26" value="18"></label><label>Line height <b id="lhv">1.7</b><input type="range" id="lh" min="10" max="22" value="17"></label></div></div>
+    <div class="card sample" id="sample" data-r><h3>The morning bake</h3><p>Every day begins at four in the morning. The ovens are lit, the dough is shaped by hand, and the smell of fresh bread slowly fills the street. Good typography should feel the same: warm, patient and effortless to enjoy.</p></div>
+  </div>
+</section>
+<section class="stats"><div class="wrap g3">
+  <div class="card stat" data-r><b data-count="62" data-suf="%">0</b><span>More time on page</span></div>
+  <div class="card stat" data-r style="--d:.1s"><b data-count="2" data-suf="x">0</b><span>Online orders</span></div>
+  <div class="card stat" data-r style="--d:.2s"><b data-count="94">0</b><span>Lighthouse score</span></div>
+</div></section>
+</main>
+<footer><div class="wrap"><span>© <span data-year></span> Redesign Lab. Demo project.</span><span>Built with HTML, CSS and JavaScript</span></div></footer>
+<script src="script.js"></script>
+</body>
+</html>
